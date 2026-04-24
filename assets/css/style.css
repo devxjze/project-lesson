@@ -41,6 +41,21 @@ a {
 .btn:hover {
     opacity: 0.9;
 }
+.heading {
+    color: #171100;
+    font-family: var(--font-heading);
+    line-height: 1.17;
+    letter-spacing: -1.16px;
+}
+
+.heading.lv1 {
+    font-size: 5.8rem;
+    font-weight: 700;
+}
+.heading.lv2 {
+    font-size: 3.8rem;
+    line-height: 1.26;
+}
 
 /* Header */
 
@@ -125,13 +140,14 @@ a {
     right: 0px;
     border-radius: 12px;
     width: 270px;
-    padding: 28px 24px;
+    padding: 24px;
     background: #fff;
     box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.05);
 }
 
 .hero-sumary .item {
     display: flex;
+    align-items: center;
 }
 
 .hero-sumary .item + .item {
@@ -182,15 +198,6 @@ a {
 
 .hero .body {
     display: flex;
-}
-
-.hero .heading {
-    color: #171100;
-    font-family: Sen;
-    font-size: 5.8rem;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: -1.16px;
 }
 
 .hero .desc {
@@ -252,4 +259,43 @@ a {
     font-weight: 700;
     line-height: 1.23;
     padding: 0 8px 0 28px;
+}
+
+/* Popular */
+.popular {
+    padding-top: 65px 0;
+    margin-top: 135px;
+}
+.popular .popular-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.popular-top .desc {
+    margin-top: 16px;
+    width: 458px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+.popular-top .control {
+    display: flex;
+    gap: 18px;
+}
+.popular-top .control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    background: transparent;
+}
+
+.popular-top .control-btn:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--primary);
 }
